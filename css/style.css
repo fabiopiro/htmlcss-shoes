@@ -58,6 +58,7 @@ body {
     height: 100vh;
     width: 100%;
     position: relative;
+    color: yellow;
 }
 
 #red {
@@ -68,15 +69,19 @@ body {
 }
 #yellow {
     background-color: yellow;
+    color: green;
 }
+
 
 h1 {
     text-transform: uppercase;
 }
 
-.layout {
+
+
+.content {
     position: absolute;
     top: 50%;
-    right: 0%;
+    left: 50%;
     transform: translate(-50%, -50%);
 }
