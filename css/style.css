@@ -14,3 +14,69 @@
 body {
     font-family: 'Rubik Mono One', sans-serif;
 }
+
+/* menu */
+
+.menu {
+    line-height: 150px;
+    width: 100%;
+    /* elimino stile lista */
+    list-style: none;
+    text-align: right;
+    position: fixed;
+    z-index: 5;
+}
+/* li appartenenti a menu */
+.menu li {
+    display: inline-block;
+    vertical-align: middle;
+    height: 100%;
+    /* trasformo la list in "orizzontale" */
+}
+
+/* a appartenenti a menu */
+.menu a {
+    display: inline-block;
+    vertical-align: middle;
+    /* elimino decorazione link */
+    text-decoration: none;
+    /* testo link */
+    text-align: center;
+    color: black;
+    /*  */
+    line-height: 50px;
+    width: 50px;
+    background-color: white;
+    border-radius: 50%;
+    margin: 0 20px;
+}
+
+/* MAIN */
+#red,
+#green,
+#yellow {
+    height: 100vh;
+    width: 100%;
+    position: relative;
+}
+
+#red {
+    background-color: red;
+}
+#green {
+    background-color: green;
+}
+#yellow {
+    background-color: yellow;
+}
+
+h1 {
+    text-transform: uppercase;
+}
+
+.layout {
+    position: absolute;
+    top: 50%;
+    right: 0%;
+    transform: translate(-50%, -50%);
+}
