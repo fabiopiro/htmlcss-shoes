@@ -4,12 +4,11 @@
     margin: 0;
     padding: 0;
 }
-/* clearfix */
-.clearfix::after {
-    content: "";
-    display: table;
-    clear: both;
+
+html {
+    scroll-behavior: smooth;
 }
+
 /* font */
 body {
     font-family: 'Rubik Mono One', sans-serif;
@@ -29,7 +28,6 @@ body {
 /* li appartenenti a menu */
 .menu li {
     display: inline-block;
-    vertical-align: middle;
     height: 100%;
     /* trasformo la list in "orizzontale" */
 }
@@ -37,7 +35,6 @@ body {
 /* a appartenenti a menu */
 .menu a {
     display: inline-block;
-    vertical-align: middle;
     /* elimino decorazione link */
     text-decoration: none;
     /* testo link */
@@ -49,6 +46,7 @@ body {
     background-color: white;
     border-radius: 50%;
     margin: 0 20px;
+    border: 1px solid black;
 }
 
 /* MAIN */
@@ -75,9 +73,13 @@ body {
 
 h1 {
     text-transform: uppercase;
+    text-align: center;
+    font-size: 50px;
 }
 
-
+.content img {
+    width: 100%;
+}
 
 .content {
     position: absolute;
